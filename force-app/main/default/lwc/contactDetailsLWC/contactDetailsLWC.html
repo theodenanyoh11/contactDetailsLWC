@@ -1,0 +1,37 @@
+<template>
+    
+    <template if:true={areDetailsVisible}>
+    <lightning-card  variant="Narrow" >
+
+       <div class="slds-p-around_x-small" style = "{backgroundStyle}">
+        <div class="slds-grid slds-gutters" style ="padding-top:2.5rem;" >
+            <div class="slds-col slds-size_1-of3 "  >
+                <div style="border-radius: 50%;border-radius: 50%;overflow: hidden;position: relative;      
+                 box-sizing: content-box; flex-grow: initial;display:table-cell; vertical-align:middle; text-align:center">
+                <img 
+                src={contactdetailsMap.ProfilePhoto} 
+                alt="User Image" />
+            </div>
+            </div>
+            <div class="slds-col slds-size_2-of-3" style="padding-top:2.5rem">
+              <div class="slds-text-title_bold">
+                {contactdetailsMap.Name}
+              </div>
+              <div>
+                {contactdetailsMap.Email}
+               </div>
+                <div> 
+                City: {contactdetailsMap.City}
+            </div>
+                <div>
+               State: {contactdetailsMap.State}
+            
+              </div>
+            </div>
+          </div>
+        </div>
+    </lightning-card>
+</template>
+    
+
+</template>
